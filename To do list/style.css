@@ -1,0 +1,212 @@
+body{
+    background-image: url('./img/basic.f4f127adeeaf58d28161c05c04b22668.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.heading{
+    text-align: center;
+    font-family: "Amatic SC", sans-serif;
+    padding: 5px;
+}
+
+.container{
+    background-color: rgba(136, 126, 127, 0.6);
+    height: 700px;
+    width: 500px;
+    margin: auto;
+    color: white;
+    border-radius: 20px;
+    font-family: "Manrope", sans-serif;
+
+}
+.new{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:rgb(169, 169, 169,0.6);
+    border-radius: 40px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    font-family: "Amatic SC", sans-serif;
+    margin-left: 3rem;
+    border: 2px solid black;
+    color: black;
+    width: 26.5rem;
+    height: 4.12rem;
+
+}
+
+#input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+
+.input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+.fa-solid{
+    margin: 5px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    margin: 5px;
+}
+
+.item{
+    display: flex;
+    border: 2px solid black;
+    border-radius: 40px;
+    padding: 20px;
+    color: black;
+    background-color:rgb(169, 169, 169,0.6);
+}
+
+.item:hover{
+    background-color: rgb(245, 245, 220,0.6);
+    color: white;
+}
+
+.options{
+    margin-left: auto;
+    margin-right: 2px;
+}
+
+button{
+    border-radius: 20px;
+    text-align: center;
+}
+.add{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background-color:black;
+    color: white;
+    border-radius: 40px;
+    height: 4.12rem;
+}
+.btn{
+    margin-left: 3.5rem;
+    background-color:black;
+    color: white;
+    padding: 10px;
+}
+
+.remove{
+    background-color:black;
+    color: white;
+}
+
+.edit{
+    background-color:black;
+    color: white;
+}
+
+.add:hover,.btn:hover,.edit:hover,.remove:hover{
+    background-color: rgb(185, 184, 184);
+    color: black;
+    border: 2px solid black;
+}
+
+/* Responsive styles */
+
+/* For devices with a max-width of 768px (tablets and below) */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .new {
+        display: flex;
+        flex-wrap: wrap; /* Allow wrapping */
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    #input {
+        flex: 1;
+        margin-bottom: 10px;
+        padding: 8px;
+        box-sizing: border-box; /* Ensure padding is included in width */
+    }
+
+    .add {
+        flex: 1;
+        padding: 12px;
+        width: auto; /* Auto width to fit the container */
+        margin-left: 10px; /* Add margin for spacing */
+        box-sizing: border-box; /* Ensure padding is included in width */
+    }
+
+    .item {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .options {
+        margin-left: 0;
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+
+/* For devices with a max-width of 480px (mobile phones) */
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .heading h1 {
+        font-size: 1.5rem;
+    }
+
+    .new {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    #input {
+        margin-bottom: 10px;
+        padding: 8px;
+    }
+
+    .add {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .item {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .options {
+        margin-left: 0;
+        margin-top: 8px;
+        text-align: center;
+    }
+
+    .fa-solid {
+        margin: 4px;
+    }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Manrope:wght@200..800&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="heading"><h1><i class="fa-solid fa-list"></i> To-Do-List </h1></div>
+        <ul id="itemList">
+            <li><div class="item">
+                text
+                <div class="options">
+                    <button class="edit"><i class="fa-solid fa-pen"></i></button>
+                    <button class="remove"><i class="fa-solid fa-trash"></i></button>
+                </div>
+            </div>
+            </li>
+        </ul>
+        <div class="new">
+            <input type="text" placeholder="Enter a Task" id="input">
+            <button class="add"><i class="fa-solid fa-plus"></i></button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
