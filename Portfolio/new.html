@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+    emailjs.init({
+        publicKey: "6p1nRTxYlD-e16D7G",
+    });
+})();
+</script>
+</head>
+<body> 
+    <header class="header">
+        <a href="#" class="logo"><span>Port</span>folio</a>
+        <ul class="navbar">
+            <li id="home" class="active">Home</li>
+            <li id="about">About</li>
+            <li id="project">Projects</li>
+            <li id="contact">Contact</li>
+        </ul>
+    </header>
+
+    <section  class="home">
+        <div class="home-content">
+            <h1>I am <br><span id="text">Chetali Mehra</span></h1>
+            <p>and currently a B.Tech (CSE) Student at <span>Graphic Era Hill University</span>.</p>
+            <!-- <p>A highly motivated, hardworking and determined tech enthusiast with a passion of creating 
+                innovative and efficient solutions, also capable of time management and working under 
+                pressure. Seeking a role in a reputable organization to use my analytical and technical skillls 
+                to better my personal learning and contribute to the growth of the organisation.</p> -->
+            
+            <div class="btn-box">
+                <button class="btn-1">Hire Me</button>
+                <button class="btn-2">Contact Me</button>
+            </div>
+        </div>
+
+        <!-- <div class="img-box">
+            <img src="image/profile.jpg" >
+        </div> -->
+    </section>
+
+    <section  class="about">
+        <div class="about-img">
+            <img src="image/profile.jpg">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <p>Hello! I’m Chetali Mehra, a highly motivated, hardworking and determined tech enthusiast with a passion of creating 
+                innovative and efficient solutions, also capable of time management and working under 
+                pressure. Seeking a role in a reputable organization to use my analytical and technical skillls 
+                to better my personal learning and contribute to the growth of the organisation. 
+                Thank you for visiting my portfolio. I look forward to connecting with you!
+            </p>
+
+            <ul class="about-nav">
+                <li  id="skills" class="active">Skills</li>
+                <li id="edu">Education</li>
+            </ul>
+            <p id="skills-txt">
+                <span>Programming languages:</span> C,C++, Python <br>
+                <span>Web Technology:</span> HTML, CSS, Tailwind CSS,  Javascript, Node.js, MongoDb, PHP<br>
+                <span>IDE Tools:</span> Vs code, Pycharm <br>
+                <span>Core Knowledge:</span> OOP, Database Management  System, Operating System<br>
+            </p>
+        </div>
+    </section>
+    
+    <section  class="project">
+        <div class="projects">
+            <h2 class="heading"><span>Projects</span></h2>
+            <div class="project-box">
+                <div class="project-content">
+                    <h3>Blog Website</h3>
+                    <p>This is a Blog Website made using Node.JS, Express.JS and MongoDB</p>
+                    <a href="https://github.com/chetaliMehra/BlogWebsite"
+                    target="_blank"><img src="image/mern.jpg"></a>
+                </div>
+                <div class="project-content">
+                    <h3>Library Management System</h3>
+                    <p>This is a python application used for managing data regardig Library and books transactions. The user interface is made using Tkinter.</p>
+                    <a href="https://github.com/chetaliMehra/LibraryManagementSystem"
+                    target="_blank"><img src="image/python.webp" ></a>
+                </div>
+                <div class="project-content">
+                    <h3>Fashion Recommendor System</h3>
+                    <p>It is a Machine Learning Project made using Python. This project returns similar outfits to the input image. </p>
+                    <a href="https://github.com/chetaliMehra/FashionRecommendorSystem"
+                    target="_blank"><img src="image/fashion.jpg" ></a>
+                </div>
+                <div class="project-content">
+                    <h3>Netflix and Amazon clones</h3>
+                    <p>Netflix and Amazon clones made using HTML and CSS.</p>
+                    <a href="https://github.com/chetaliMehra?tab=repositories"
+                    target="_blank"><img src="image/amazon.jpg"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <h2 class="contact-me">Contact <span>Me</span></h2>
+        <form id="form" onsubmit="return sendMail(event)">
+            <div class="input-box">
+                <input type="hidden" name="access_key" value="aaca9df1-a6f4-4feb-bd39-b967568183d8">
+                <input type="text" placeholder="Enter your name" id="fullName">
+                <p class="error errname"></p>
+                <input type="email" placeholder="Enter your Email" id="email_id">
+                <p class="error errMail"></p>
+            </div>
+            <textarea id="msg" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <p class="error errMsg"></p>
+            <button class="btn-1" type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+
+        <div class="social">
+            <a href="https://github.com/chetaliMehra"><i class='bx bxl-github' ></i></a>
+            <a href="https://www.linkedin.com/in/chetali-mehra-8bba97224/"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="https://www.instagram.com/_chetali_mehra_/"><i class='bx bxl-instagram-alt'></i></a>
+        </div>
+
+        <ul class="list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+
+        </ul>
+
+        <p class="copyright">&copy;2024 Chetali | All Rights Reserved</p>
+    </footer>
+
+</body>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="script.js"></script>
+</html>
